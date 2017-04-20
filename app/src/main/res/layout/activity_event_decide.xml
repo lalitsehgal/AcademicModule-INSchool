@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundnew"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context="sehgal.attendancemodule.EventDecide">
+
+    <ImageButton
+        android:id="@+id/btnAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@null"
+        app:srcCompat="@drawable/attendancecopy"
+        android:layout_marginStart="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/btnDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="@null"
+        app:srcCompat="@drawable/diarycopy"
+        android:layout_alignTop="@+id/btnAttendance"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:id="@+id/btnresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:background="@null"
+        app:srcCompat="@drawable/result"
+        android:layout_below="@+id/tvattendance"
+        android:layout_alignStart="@+id/tvattendance" />
+
+    <ImageButton
+        android:id="@+id/btntimetable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/timetable"
+        android:layout_alignTop="@+id/btnresult"
+        android:layout_alignStart="@+id/btnDiary" />
+
+
+    <TextView
+        android:id="@+id/tvattendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fontcolor"
+        android:layout_marginTop="14dp"
+        android:text="MARK ATTENDANCE"
+        android:layout_below="@+id/btnAttendance"
+        android:layout_alignStart="@+id/btnAttendance" />
+
+    <TextView
+        android:id="@+id/tvdiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/fontcolor"
+        android:text="WRITE IN DIARY"
+        android:layout_alignBaseline="@+id/tvattendance"
+        android:layout_alignBottom="@+id/tvattendance"
+        android:layout_alignStart="@+id/tvtimetable" />
+
+    <TextView
+        android:id="@+id/tvresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="21dp"
+        android:textColor="@color/fontcolor"
+        android:text="VIEW CLASS RESULT"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/btnresult"
+        android:layout_alignStart="@+id/btnresult" />
+
+    <TextView
+        android:id="@+id/tvtimetable"
+        android:layout_width="wrap_content"
+        android:textColor="@color/fontcolor"
+        android:layout_height="wrap_content"
+        android:text="VIEW TIME TABLE"
+        android:layout_alignBaseline="@+id/tvresult"
+        android:layout_alignBottom="@+id/tvresult"
+        android:layout_alignEnd="@+id/btntimetable" />
+
+</RelativeLayout>

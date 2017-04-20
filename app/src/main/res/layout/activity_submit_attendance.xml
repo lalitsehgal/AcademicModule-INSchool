@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/backgroundnew"
+    android:layout_height="match_parent" >
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/greentoolbar"
+        android:textColor="@color/white"
+        android:text="Save Attendance"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvabsent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="Press Back To EDIT Attendance once Marked Will not Be Edited"
+        android:textColor="@color/fontcolor"
+        android:textSize="17sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#2C3E50"
+        android:text="NOTE : Please do not submit attendance multiple Times to prevent data inconsistency"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/tvabsent" />
+
+</RelativeLayout>

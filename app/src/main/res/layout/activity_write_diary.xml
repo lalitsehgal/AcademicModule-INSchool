@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundnew"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="sehgal.attendancemodule.WriteDiary">
+
+    <Button
+        android:id="@+id/btnselectstd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@color/greentoolbar"
+        android:text="CLICK HERE TO SELECT STUDENTS "
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/classDiary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fontcolor"
+        android:textSize="20dp"
+        android:layout_marginTop="11dp"
+        android:text="STUDENT DIARY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/classDiary"
+        android:layout_above="@+id/btnselectstd">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnselectstd">
+
+
+
+
+    <TextView
+        android:id="@+id/Subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16dp"
+        android:text="SUBJECT : "
+        android:layout_marginTop="89dp"
+        android:textStyle="bold"
+        android:textColor="@color/fontcolor"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fontcolor"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:text="MESSAGE : "
+        android:layout_marginTop="69dp"
+        android:layout_below="@+id/etSubject"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/etSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="Subject of the Message"
+        android:textColor="@color/fontcolor"
+        android:layout_alignBaseline="@+id/Subject"
+        android:layout_alignBottom="@+id/Subject"
+        android:layout_toEndOf="@+id/Subject" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_alignBaseline="@+id/message"
+        android:layout_alignBottom="@+id/message"
+        android:layout_toEndOf="@+id/message"
+        android:ems="10"
+        android:hint="Write your message here"
+        android:textColor="@color/fontcolor" />
+
+
+
+
+
+</RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
+

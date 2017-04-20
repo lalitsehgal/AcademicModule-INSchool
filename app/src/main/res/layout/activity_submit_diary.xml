@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundnew"
+    tools:context="sehgal.attendancemodule.SubmitDiary">
+
+
+    <Button
+        android:id="@+id/submitDiary"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:background="@color/greentoolbar"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="SAVE MESSAGE" />
+
+    <TextView
+        android:id="@+id/tvabsent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:gravity="center"
+        android:text="Press Back To EDIT The Selected Students"
+        android:textColor="@color/fontcolor"
+        android:textSize="17sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textColor="#2C3E50"
+        android:text="NOTE : Please do not submit Data multiple Times to prevent data inconsistency"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/tvabsent" />
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundnew"
+    tools:context="sehgal.attendancemodule.EventDecide">
+
+    <ImageButton
+        android:id="@+id/btnstudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="142dp"
+        android:background="@null"
+        app:srcCompat="@drawable/studentmodule"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/btnteacher" />
+
+    <ImageButton
+        android:id="@+id/btnteacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:srcCompat="@drawable/teachermodule"
+        android:layout_marginEnd="34dp"
+        android:layout_alignTop="@+id/btnstudent"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/tvstudent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fontcolor"
+        android:layout_marginTop="27dp"
+        android:text="STUDENT"
+        android:layout_marginEnd="31dp"
+        android:layout_below="@+id/btnstudent"
+        android:layout_alignEnd="@+id/btnstudent" />
+
+    <TextView
+        android:id="@+id/tvteacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/fontcolor"
+        android:layout_marginEnd="29dp"
+        android:text="TEACHER"
+        android:layout_alignBaseline="@+id/tvstudent"
+        android:layout_alignBottom="@+id/tvstudent"
+        android:layout_alignEnd="@+id/btnteacher" />
+
+
+
+
+
+</RelativeLayout>

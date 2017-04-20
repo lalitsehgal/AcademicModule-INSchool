@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">INSchool-Acadamics</string>
+    <string name="some_text">
+     STUDENT LIST
+ </string>
+    <string-array name="class_name">
+        <item><font color="#FFFFFF">---SELECT---</font></item>
+        <item><font color="#FFFFFF">Class 1st</font></item>
+        <item><font color="#FFFFFF">Class 2nd</font></item>
+        <item><font color="#FFFFFF">Class 3rd</font></item>
+        <item><font color="#FFFFFF">Class 4th</font></item>
+        <item><font color="#FFFFFF">Class 5th</font></item>
+        <item><font color="#FFFFFF">Class 6th</font></item>
+        <item><font color="#FFFFFF">Class 7th</font></item>
+        <item><font color="#FFFFFF">Class 8th</font></item>
+        <item><font color="#FFFFFF">Class 9th</font></item>
+        <item><font color="#FFFFFF">Class 10th</font></item>
+        <item><font color="#FFFFFF">Class 11th</font></item>
+        <item><font color="#FFFFFF">Class 12th</font></item>
+    </string-array>
+
+</resources>

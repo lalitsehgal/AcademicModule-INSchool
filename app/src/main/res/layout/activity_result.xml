@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundnew"
+    tools:context="sehgal.attendancemodule.Result">
+
+    <TextView
+        android:id="@+id/tvrollno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="ROLL NO"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/fontcolor"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_toRightOf="@id/tvrollno"
+        android:text="NAME"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/fontcolor" />
+
+    <TextView
+        android:id="@+id/tvexam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvname"
+        android:textColor="@color/fontcolor"
+        android:text="EXAM"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvsubject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvexam"
+        android:text="SUBJECT"
+        android:textStyle="bold"
+        android:textColor="@color/fontcolor"
+        />
+
+    <TextView
+        android:id="@+id/tvmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tvsubject"
+        android:textColor="@color/fontcolor"
+        android:text="MARKS"
+        android:textStyle="bold" />
+
+
+
+
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@+id/tvname"
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

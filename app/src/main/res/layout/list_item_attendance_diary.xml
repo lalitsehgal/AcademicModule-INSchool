@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:orientation="vertical"
+    android:background="@color/backgroundnew"
+    android:padding="@dimen/activity_horizontal_margin">
+
+
+    <TextView
+        android:id="@+id/nameTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="@color/fontcolor"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rollTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTime"
+        android:textColor="@color/fontcolor"
+        android:textSize="15dp"
+        android:clickable="false"
+        android:paddingBottom="2dip" />
+
+    <TextView
+        android:id="@+id/subStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rollTime"
+        android:clickable="false"
+        android:textSize="14dp"
+        android:textColor="@color/fontcolor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msgRoll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/fontcolor"
+        android:textSize="14dp"
+        android:layout_below="@+id/subStatus" />
+
+
+</RelativeLayout>
